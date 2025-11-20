@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio d'artiste | Expositions & Concerts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-circle" aria-hidden="true"></div>
+      <div>
+        <p class="eyebrow" data-i18n="tagline">Art contemporain & lyrique</p>
+        <h1 class="brand-name" data-i18n="name">Nom de l'artiste</h1>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li><a href="#available" data-i18n="nav.available">Œuvres disponibles</a></li>
+        <li><a href="#exhibitions" data-i18n="nav.exhibitions">Expositions</a></li>
+        <li><a href="#news" data-i18n="nav.news">Actualités</a></li>
+        <li><a href="#concerts" data-i18n="nav.concerts">Concerts</a></li>
+        <li><a href="#press" data-i18n="nav.press">Presse</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="language-switch">
+      <button class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.subtitle">Peinture & voix lyrique</p>
+        <h2 data-i18n="hero.title">Une œuvre et une voix pour guider le regard</h2>
+        <p data-i18n="hero.desc">Plongez dans un univers contemporain où chaque toile dialogue avec le chant. Découvrez les expositions, les concerts et les œuvres disponibles sur demande.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#available" data-i18n="hero.cta">Voir les œuvres disponibles</a>
+          <a class="btn ghost" href="#news" data-i18n="hero.secondary">Dernières actualités</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="artwork-card">
+          <div class="artwork-image placeholder-gradient"></div>
+          <div class="artwork-meta">
+            <p class="eyebrow" data-i18n="hero.work.label">Œuvre phare</p>
+            <h3 class="artwork-title">Lumière marine</h3>
+            <p class="artwork-info" data-i18n="hero.work.info">Acrylique sur toile, 120 x 80 cm</p>
+            <p class="artwork-status" data-i18n="hero.work.status">Pièce de collection (déjà exposée)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about.eyebrow">À propos</p>
+        <h2 data-i18n="about.title">Artiste visuelle & chanteuse lyrique</h2>
+        <p class="section-lead" data-i18n="about.lead">Biographie, démarche et collaborations.</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p data-i18n="about.bio">Biographie concise de l'artiste. Ajoutez ici la présentation déjà rédigée, incluant la formation, les influences et les collaborations. Mentionnez l'activité de chanteuse lyrique et les performances marquantes.</p>
+          <div class="info-badges">
+            <span data-i18n="about.badge1">Basée à</span>
+            <span data-i18n="about.badge2">Discipline : peinture, techniques mixtes</span>
+            <span data-i18n="about.badge3">Chant lyrique : récitals & collaborations</span>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <h3 data-i18n="about.focus.title">Ce que le site met en avant</h3>
+          <ul>
+            <li data-i18n="about.focus.item1">Expositions passées et à venir</li>
+            <li data-i18n="about.focus.item2">Œuvres disponibles sur demande</li>
+            <li data-i18n="about.focus.item3">Agenda concerts et ateliers</li>
+            <li data-i18n="about.focus.item4">Dossiers presse et collaborations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Galerie principale</p>
+        <h2 data-i18n="gallery.title">Parcours visuel</h2>
+        <p class="section-lead" data-i18n="gallery.lead">Sélection d'œuvres présentées (environ 50 pièces). Liens vers Google Photos pour conserver la qualité.</p>
+      </div>
+      <div class="grid gallery-grid">
+        <article class="card" data-status="unavailable">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Horizons bleus</h3>
+            <p class="card-meta" data-i18n="gallery.details">Acrylique, 100 x 70 cm — 2023</p>
+            <p class="status-pill" data-i18n="gallery.unavailable">Collection privée</p>
+          </div>
+        </article>
+        <article class="card" data-status="unavailable">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Brume solaire</h3>
+            <p class="card-meta" data-i18n="gallery.details">Huile, 90 x 60 cm — 2022</p>
+            <p class="status-pill" data-i18n="gallery.unavailable">Collection privée</p>
+          </div>
+        </article>
+        <article class="card" data-status="available">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Marée montante</h3>
+            <p class="card-meta" data-i18n="gallery.details">Techniques mixtes, 80 x 80 cm — 2024</p>
+            <p class="status-pill available" data-i18n="gallery.available">Disponible sur demande</p>
+          </div>
+        </article>
+        <article class="card" data-status="unavailable">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Écume</h3>
+            <p class="card-meta" data-i18n="gallery.details">Acrylique, 70 x 50 cm — 2021</p>
+            <p class="status-pill" data-i18n="gallery.unavailable">Collection privée</p>
+          </div>
+        </article>
+        <article class="card" data-status="available">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Reflets</h3>
+            <p class="card-meta" data-i18n="gallery.details">Aquarelle, 60 x 40 cm — 2024</p>
+            <p class="status-pill available" data-i18n="gallery.available">Disponible sur demande</p>
+          </div>
+        </article>
+        <article class="card" data-status="unavailable">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Aube</h3>
+            <p class="card-meta" data-i18n="gallery.details">Acrylique, 100 x 100 cm — 2023</p>
+            <p class="status-pill" data-i18n="gallery.unavailable">Collection privée</p>
+          </div>
+        </article>
+      </div>
+      <p class="note" data-i18n="gallery.note">Ratio visuel : environ 2/3 d'œuvres non disponibles et 1/3 d'œuvres disponibles. Ajoutez vos images haute définition via des liens externes (Google Photos).</p>
+    </section>
+
+    <section id="available" class="available section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="available.eyebrow">Œuvres disponibles</p>
+        <h2 data-i18n="available.title">Sélection à l'acquisition</h2>
+        <p class="section-lead" data-i18n="available.lead">Prix sur demande. Contactez l'artiste pour réserver ou organiser une visite d'atelier.</p>
+      </div>
+      <div class="grid available-grid">
+        <article class="card">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Constellation</h3>
+            <p class="card-meta" data-i18n="available.detail">Techniques mixtes, 90 x 90 cm — 2024</p>
+            <p class="status-pill available" data-i18n="available.price">Prix sur demande</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Vagues nocturnes</h3>
+            <p class="card-meta" data-i18n="available.detail">Huile, 70 x 50 cm — 2023</p>
+            <p class="status-pill available" data-i18n="available.price">Prix sur demande</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image placeholder-gradient"></div>
+          <div class="card-body">
+            <p class="eyebrow" data-i18n="gallery.work">Peinture</p>
+            <h3>Clair-obscur</h3>
+            <p class="card-meta" data-i18n="available.detail">Acrylique, 80 x 60 cm — 2024</p>
+            <p class="status-pill available" data-i18n="available.price">Prix sur demande</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="exhibitions" class="exhibitions section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="exhibitions.eyebrow">Expositions</p>
+        <h2 data-i18n="exhibitions.title">Passées & à venir</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 data-i18n="exhibitions.upcoming">Exposition à venir</h3>
+            <p data-i18n="exhibitions.upcoming.detail">Galerie Bleu Horizon — Date à confirmer</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 data-i18n="exhibitions.past1">Lignes de marée</h3>
+            <p data-i18n="exhibitions.past1.detail">Centre d'art Marin — 2024</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 data-i18n="exhibitions.past2">Éclats</h3>
+            <p data-i18n="exhibitions.past2.detail">Galerie Aurora — 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="news.eyebrow">Actualités</p>
+        <h2 data-i18n="news.title">À la une</h2>
+        <p class="section-lead" data-i18n="news.lead">Annonces rapides : ateliers, événements spéciaux, nouvelles séries.</p>
+      </div>
+      <div class="stack">
+        <article class="news-card">
+          <p class="eyebrow" data-i18n="news.item.date1">Mai 2024</p>
+          <h3 data-i18n="news.item.title1">Atelier immersif « Couleurs marines »</h3>
+          <p data-i18n="news.item.desc1">Session limitée à 10 personnes. Réservation par formulaire de contact.</p>
+        </article>
+        <article class="news-card">
+          <p class="eyebrow" data-i18n="news.item.date2">Avril 2024</p>
+          <h3 data-i18n="news.item.title2">Article presse : dialogue entre peinture et voix</h3>
+          <p data-i18n="news.item.desc2">Publication dans la revue « Contemporain » — dossier presse disponible.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="concerts" class="concerts section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="concerts.eyebrow">Concerts</p>
+        <h2 data-i18n="concerts.title">Agenda lyrique</h2>
+        <p class="section-lead" data-i18n="concerts.lead">Ajoutez facilement vos prochaines dates.</p>
+      </div>
+      <div class="grid concerts-grid">
+        <article class="card">
+          <p class="eyebrow" data-i18n="concerts.upcoming">Prochain concert</p>
+          <h3 data-i18n="concerts.item1.title">Récital « Vibrations »</h3>
+          <p class="card-meta" data-i18n="concerts.item1.detail">Théâtre de la Mer — 12 juillet 2024</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow" data-i18n="concerts.upcoming">À venir</p>
+          <h3 data-i18n="concerts.item2.title">Voix & toiles</h3>
+          <p class="card-meta" data-i18n="concerts.item2.detail">Concert immersif — Date à confirmer</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="press" class="press section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="press.eyebrow">Presse & collaborations</p>
+        <h2 data-i18n="press.title">Dossiers et partenaires</h2>
+        <p class="section-lead" data-i18n="press.lead">Ressources pour les galeries, journalistes et partenaires.</p>
+      </div>
+      <div class="grid press-grid">
+        <article class="card">
+          <h3 data-i18n="press.presskit">Dossier presse</h3>
+          <p data-i18n="press.presskit.detail">PDF haute résolution, biographie complète, visuels téléchargeables.</p>
+          <a class="btn ghost" href="#contact" data-i18n="press.presskit.cta">Demander l'accès</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="press.collab">Collaborations</h3>
+          <p data-i18n="press.collab.detail">Projets avec galeries, festivals, marques ou orchestres.</p>
+          <a class="btn ghost" href="#contact" data-i18n="press.collab.cta">Proposer un projet</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Échanges & acquisitions</h2>
+        <p class="section-lead" data-i18n="contact.lead">Formulaire pour galeries, acheteurs, presse ou collaborations.</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name" data-i18n="contact.name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Nom complet" required>
+        </div>
+        <div class="form-row">
+          <label for="email" data-i18n="contact.email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="vous@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="reason" data-i18n="contact.reason">Sujet</label>
+          <select id="reason" name="reason">
+            <option value="gallery" data-i18n="contact.option.gallery">Galerie / expo</option>
+            <option value="collector" data-i18n="contact.option.collector">Acquisition</option>
+            <option value="press" data-i18n="contact.option.press">Presse</option>
+            <option value="concert" data-i18n="contact.option.concert">Concert</option>
+            <option value="other" data-i18n="contact.option.other">Autre</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message" data-i18n="contact.message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre projet, vos dates, vos questions" required></textarea>
+        </div>
+        <p class="form-note" data-i18n="contact.note">Les œuvres sont disponibles sur demande. Un dossier complet vous sera envoyé par e-mail.</p>
+        <button type="submit" class="btn primary" data-i18n="contact.submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="brand-name" data-i18n="footer.name">Nom de l'artiste</p>
+      <p class="eyebrow" data-i18n="footer.tagline">Art contemporain & lyrique</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:contact@example.com">contact@example.com</a>
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="#concerts" data-i18n="footer.agenda">Agenda</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
